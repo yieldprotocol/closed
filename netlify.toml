@@ -1,8 +1,12 @@
-[ build ]
-     publish = "."
+[build]
+  publish = "."
 
 [[redirects]]
-     from = "/*"
-     to = "/index.html"
-     status = 200
-   
+  from = "/*.pdf"
+  to = "/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
