@@ -1,10 +1,7 @@
 [build]
-  publish = "."
+  publish = "public"
 
 [[redirects]]
   from = "/"
   to = "/index.html"
   status = 200
-
-[build.processing]
-  skip_processing = true
