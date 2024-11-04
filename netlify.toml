@@ -1,12 +1,9 @@
 [build]
   publish = "."
 
-[[headers]]
-  for = "/*.pdf"
-  [headers.values]
-    Content-Type = "application/pdf"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = true
+  conditions = {Path = {not = ["/*.pdf"]}}
