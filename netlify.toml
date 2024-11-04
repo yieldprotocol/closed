@@ -1,11 +1,10 @@
 [build]
   publish = "."
 
-[[redirects]]
-  from = "/*.pdf"
-  to = "/:splat"
-  status = 200
-  force = true 
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
 
 [[redirects]]
   from = "/*"
